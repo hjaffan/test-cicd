@@ -6,9 +6,9 @@ on:
       - main
 
 jobs:
-  name: build application
-  run-on: [ubuntu-linux]
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+  build-application:
+    runs-on: [ubuntu-linux]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
