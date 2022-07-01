@@ -18,3 +18,8 @@ jobs:
           java-version: '17'
       - name: run test
         run: ./mvnw test
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-cicd-app
+          path: target/cicd-0.0.1-SNAPSHOT.jar
