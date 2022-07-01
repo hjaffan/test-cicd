@@ -1,0 +1,14 @@
+name: "build application"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  name: build application
+  run-on: [ubuntu-linux]
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
